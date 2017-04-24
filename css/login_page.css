@@ -1,0 +1,41 @@
+.background-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    left: -10%;
+    top: -10%;
+    background-image: url('../ace_bg.jpg');
+    background-size: cover;
+    opacity: 0.8;
+    /*-webkit-filter: blur(5px);  Safari */
+    filter: blur(10px);
+}
+
+.logo-container{
+    margin-bottom: 100px;
+}
+
+.login-component-container{
+    background: rgba(255,255,255, 0.9);
+}
+
+.login-component{
+    position: relative;
+    top: 50%;
+    margin-top: -50%;
+}
+
+.login-component-inputs-container{
+    padding: 0 15%;
+}
+
+.login-component-input{
+    padding-bottom: 10px;
+}
