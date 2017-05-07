@@ -23,13 +23,17 @@
 }
 
 .login-component-container{
-    background: rgba(255,255,255, 0.9);
+    position: relative;
+    height: 100vh;
+    background: rgba(255,255,255, 1);
 }
 
 .login-component{
     position: relative;
     top: 50%;
-    margin-top: -50%;
+    /*margin-top: -50%;*/
+    transform: translateY(-50%);
+    /*display: block;*/
 }
 
 .login-component-inputs-container{
@@ -38,4 +42,59 @@
 
 .login-component-input{
     padding-bottom: 10px;
+}
+
+.login-component-text{
+    text-align: center;
+    margin: 35px 0;
+}
+
+.login-component-oauth-strategies{
+    width: 70% !important;
+    margin-left: 15% !important ;
+}
+
+.strategy-container {
+  width: 70%;
+  margin-left: 15%;
+  background: #EFEFEF;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+
+  transition: all .3s;
+}
+
+.strategy-container:hover{
+    background: #aaaaaa;
+}
+
+.strategy-container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.strategy-icon{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    background-position: center;
+
+      -webkit-mask-size: 90%;
+    -webkit-mask-repeat: no-repeat;    
+        -webkit-mask-position: center;
+}
+
+.facebook .strategy-icon{
+    -webkit-mask-image:  url('../facebook-letter-logo.svg');       
+}
+
+.twitter .strategy-icon{
+    -webkit-mask-image:  url('../twitter-letter-logo.svg');       
+}
+
+.linkedin .strategy-icon{
+    -webkit-mask-image:  url('../linkedin-logo.svg');       
 }
